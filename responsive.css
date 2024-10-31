@@ -1,0 +1,282 @@
+/*header start here*/
+@media screen and (max-width:950px) {
+    /*header start here*/
+        .header-wrapper{
+            display:flex;
+            flex-direction:column;
+        }
+/*header end here*/
+
+/*navbar start here*/
+    .nav-bar-wrapper{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        position: relative;
+
+    }
+    .nav-sticky{
+        background:#fff;
+        position:sticky;
+        width: 100%;
+        z-index: 4;
+        top: 0;
+    }
+    .active::after{
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: #1A76D1;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-radius:3px ;
+        display: none;
+    }
+    .hmenu2 li:hover::after{
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: #1A76D1;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-radius:3px ;
+        transition: .3s;
+        display: none;
+    }
+    .hmenu2 li{
+        text-align: left;
+        width:100px;
+        margin-bottom: 20px;
+        font-size: 20px;
+
+    }
+    .hmenu2 li a{
+        transition: .3s;
+    }
+    .hmenu2 li a:hover{
+        color:aliceblue;
+    }
+    .hmenu2{
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #1A76D1;
+        z-index: 2;
+        border-radius: 10px;
+        margin:45px 25px 0px 0px;
+        left: -100%;
+       
+    }
+
+    .bookbtn{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+        
+    }
+    #check:checked ~ .hmenu2{
+        display: block;
+        left: 0;
+    }
+    #check:checked ~ .checkbtn{
+        display: block;
+        height: 300px;
+    }
+/*navbar end here*/
+
+}
+/*header end here*/
+
+/*slider section start here*/
+@media screen and (max-width:950px){
+    .banner-text-wrapper{
+        width: 100%;
+        background-size:100%;
+        padding:5%;
+        height: 500px;
+        box-sizing: border-box;
+    }
+    .banner-text-wrapper h1{
+        font-size: 25px;
+        width:80%;
+        line-height: 30px;
+        padding-bottom: 10px;
+        margin-top: 50px;
+    }
+    .banner-text-wrapper p{
+        width:90%;
+    }
+}
+/*slider section end here*/
+
+/*schedule inner start here*/
+@media screen and (max-width:650px){
+    .absolute-section{
+        height:600px;
+    }
+    .banner-text-wrapper{
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin-top: -70px;
+    }
+}
+/*schedule inner end here*/
+
+/*help you and your famiily section start here*/
+@media screen and (max-width:650px){
+    .help-section-box-wrapper{
+        width: 100%;
+        display:flex;
+        margin:50px 0px;
+        justify-content:space-between;
+        gap:20px;
+        align-items: center;
+        flex-direction:column;
+    }
+    .ready-to-help-section h1{
+        width: 100%;
+        font-size: 20px;
+    }
+    .ready-to-help-section p{
+        width: 100%;
+    }
+}
+/*help you and your famiily section end here*/
+
+/*feautes section start here*/
+@media screen and (max-width:950px){
+    .feautes-box-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        width: 100%;
+        align-items: center;
+    }
+}
+@media screen and (max-width:650px){
+    .feautes-box-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        width: 100%;
+        align-items: center;
+    }
+    .feautes-sengle-box{
+      margin:10px 30px;
+      
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .feautes-text-wrapper{
+        padding: 0;
+        margin:0;
+    }
+}
+/*feautes section end here*/
+
+/*improve your health section start here*/
+@media screen and (max-width:950px){
+    .health-section h1{
+        font-size: 30px;
+        width: 90%;
+    }
+    .healthp{
+        width:70%;
+    }
+   .health-box-wrapper{
+    display: flex;
+    flex-direction: column;
+   }
+   .health-box{
+    width:100%;
+    padding:20px 0px;
+   }
+   .video-box{
+    height:400px;
+
+   }
+}
+@media screen and (max-width:650px){
+    .icon-with-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .iwt{
+        width: 100%;
+    }
+}
+/*improve your health section end here*/
+
+/*treatment priceing section start here*/
+@media screen and (max-width:950px){
+    .price-sengle-box{
+        width: 100%;
+    }
+}
+/*treatment priceing section end here*/
+
+/*most madical news section start here*/
+@media screen and (max-width:650px){
+    .madical-news-box-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*most madical news section end here*/
+
+/*client section start here*/
+@media screen and (max-width:950px){
+    .client-section{
+        gap: 20px;
+    }
+}
+/*client section end here*/
+
+/*book an appointment section start here*/
+@media screen and (max-width:950px){
+    .book-an-appointment-box-wrapper{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .appointment-form{
+        width:100%;
+    }
+    .appointment-form textarea{
+        width:93%;
+    }
+    .appointment-input input{
+        margin: 10px;
+    }
+    #cars{
+        margin: 10px;
+    }
+    .btnwrapper{
+        width:93%;
+    }
+}
+/*book an appointment section end here*/
+
+/*sign up for newsletter section start here*/
+@media screen and (max-width:950px){
+    .sign-for-newsletter-section{
+        display: flex;
+        width: 100%;
+        flex-wrap:wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+/*sign up for newsletter section end here*/
+
